@@ -1,0 +1,25 @@
+v {xschem version=3.4.5 file_version=1.2
+}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 50 -20 50 20 {}
+L 4 130 -20 130 20 {}
+L 4 30 -10 50 -10 {}
+L 4 130 -10 150 -10 {}
+L 4 130 10 150 10 {}
+L 4 50 20 130 20 {}
+L 4 50 -20 130 -20 {}
+B 5 27.5 -12.5 32.5 -7.5 {name=I_IN dir=in}
+B 5 147.5 -12.5 152.5 -7.5 {name=I_OUT_DAC dir=out}
+B 5 147.5 7.5 152.5 12.5 {name=I_DUMP dir=out}
+T {@symname} 47 24 0 0 0.3 0.3 {}
+T {@name} 55 -32 0 0 0.2 0.2 {}
+T {I_IN} 25 -24 0 0 0.2 0.2 {}
+T {I_OUT_DAC} 125 -14 0 1 0.2 0.2 {}
+T {I_DUMP} 125 6 0 1 0.2 0.2 {}
