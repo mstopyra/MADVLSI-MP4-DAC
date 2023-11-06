@@ -5,6 +5,43 @@ K {}
 V {}
 S {}
 E {}
+L 4 280 -500 670 -500 {}
+L 4 670 -500 670 -100 {}
+L 4 260 -100 670 -100 {}
+L 4 260 -500 260 -100 {}
+L 4 260 -500 280 -500 {}
+L 4 -1530 -400 -1530 10 {}
+L 4 -1530 10 90 10 {}
+L 4 90 -460 90 10 {}
+L 4 -1530 -460 90 -460 {}
+L 4 -1530 -460 -1530 -400 {}
+L 4 -2740 -400 -2220 -400 {}
+L 4 -2220 -400 -2220 40 {}
+L 4 -2770 40 -2220 40 {}
+L 4 -2770 -400 -2770 40 {}
+L 4 -2770 -400 -2740 -400 {}
+L 4 -2190 -500 -2190 70 {}
+L 4 -2190 70 -1660 70 {}
+L 4 -1660 -500 -1660 70 {}
+L 4 -2190 -500 -1660 -500 {}
+L 4 150 -70 630 -70 {}
+L 4 630 -70 630 460 {}
+L 4 150 460 630 460 {}
+L 4 150 -70 150 460 {}
+L 4 750 -120 1280 -120 {}
+L 4 1280 -670 1280 -120 {}
+L 4 740 -670 1280 -670 {}
+L 4 740 -670 740 -120 {}
+L 4 740 -120 760 -120 {}
+T {VCN Generator from MP3 and analog layout slides} 270 -490 0 0 0.2 0.2 {}
+T {M2M Ladder DAC} -1520 -450 0 0 0.2 0.2 {}
+T {Bias Generator - Brad showed us this in class} -2760 -390 0 0 0.2 0.2 {}
+T {Low voltage cascode pmos current mirror that works for all currents: 
+http://madvlsi.olin.edu/bminch/talks/lvcascm.pdf page 13} -2190 -500 0 0 0.2 0.2 {}
+T {Low voltage cascode nmos current mirror that works for all currents: 
+http://madvlsi.olin.edu/bminch/talks/lvcascm.pdf page 13} 190 410 0 0 0.2 0.2 {}
+T {Flipped voltage follower to hold final output stable} 1010 -660 0 1 0.2 0.2 {}
+T {I_out_final = I_out from dac due to current mirror} 1320 -440 0 0 0.2 0.2 {}
 N -1410 -370 -1410 -340 {
 lab=#net1}
 N -1410 -370 -1340 -370 {
@@ -474,7 +511,7 @@ lab=#net54}
 N 1010 -440 1010 -370 {
 lab=#net55}
 N 1180 -440 1180 -370 {
-lab=#net56}
+lab=xxx}
 N 1040 -390 1040 -240 {
 lab=#net55}
 N 1010 -390 1040 -390 {
@@ -483,8 +520,6 @@ N 860 -390 860 -240 {
 lab=#net54}
 N 830 -390 860 -390 {
 lab=#net54}
-N 80 -90 780 -100 {
-lab=#net27}
 N 780 -270 780 -100 {
 lab=#net27}
 N 780 -270 830 -270 {
@@ -503,8 +538,16 @@ N 1040 -240 1150 -240 {
 lab=#net55}
 N 980 -340 1150 -340 {
 lab=VCN}
-N 600 -340 600 -290 {}
-N 600 -340 800 -340 {}
+N 600 -340 600 -290 {
+lab=VCN}
+N 600 -340 800 -340 {
+lab=VCN}
+N 80 -90 780 -90 {
+lab=#net27}
+N 780 -100 780 -90 {
+lab=#net27}
+N 1180 -410 1210 -410 {
+lab=xxx}
 C {madvlsi/nmos3.sym} -1410 -310 0 0 {name=M1
 L=\{L\}
 W=\{W\}
@@ -1664,3 +1707,4 @@ spiceprefix=X
 C {madvlsi/gnd.sym} 830 -190 0 1 {name=l16 lab=GND}
 C {madvlsi/gnd.sym} 1010 -190 0 1 {name=l17 lab=GND}
 C {madvlsi/gnd.sym} 1180 -190 0 1 {name=l18 lab=GND}
+C {devices/lab_pin.sym} 1210 -410 0 1 {name=p19 sig_type=std_logic lab=I_out_final}
