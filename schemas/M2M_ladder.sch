@@ -152,51 +152,51 @@ lab=#net22}
 N -340 -190 -300 -190 {
 lab=#net23}
 N -270 -10 -270 10 {
-lab=I_OUT_DAC}
+lab=#net24}
 N -170 -10 -170 30 {
-lab=I_DUMP}
+lab=#net25}
 N -70 -10 -70 10 {
-lab=I_OUT_DAC}
+lab=#net24}
 N -270 10 1140 10 {
-lab=I_OUT_DAC}
+lab=#net24}
 N -170 30 1140 30 {
-lab=I_DUMP}
+lab=#net25}
 N 30 -10 30 30 {
-lab=I_DUMP}
+lab=#net25}
 N 130 -10 130 10 {
-lab=I_OUT_DAC}
+lab=#net24}
 N 230 -10 230 30 {
-lab=I_DUMP}
+lab=#net25}
 N 330 -10 330 10 {
-lab=I_OUT_DAC}
+lab=#net24}
 N 430 -10 430 30 {
-lab=I_DUMP}
+lab=#net25}
 N 530 -10 530 10 {
-lab=I_OUT_DAC}
+lab=#net24}
 N 630 -10 630 30 {
-lab=I_DUMP}
+lab=#net25}
 N 730 -10 730 10 {
-lab=I_OUT_DAC}
+lab=#net24}
 N 830 -10 830 30 {
-lab=I_DUMP}
+lab=#net25}
 N 930 -10 930 10 {
-lab=I_OUT_DAC}
+lab=#net24}
 N 1030 -10 1030 30 {
-lab=I_DUMP}
-N 1180 10 1210 10 {
+lab=#net25}
+N 1190 10 1220 10 {
 lab=I_OUT_DAC}
-N 1180 30 1210 30 {
+N 1190 30 1220 30 {
 lab=I_DUMP}
 N -300 -190 1120 -190 {
 lab=#net23}
 N 1150 -160 1150 -50 {
-lab=I_DUMP}
+lab=#net25}
 N 1150 -50 1150 30 {
-lab=I_DUMP}
+lab=#net25}
 N 1140 30 1180 30 {
-lab=I_DUMP}
+lab=#net25}
 N 1140 10 1180 10 {
-lab=I_OUT_DAC}
+lab=#net24}
 N -170 -220 -170 -190 {
 lab=#net23}
 N 30 -220 30 -190 {
@@ -225,7 +225,6 @@ N 760 50 780 50 {
 lab=#net18}
 N 960 50 980 50 {
 lab=#net21}
-N -350 -190 -340 -190 {}
 C {madvlsi/nmos3.sym} -270 -190 0 0 {name=M1
 L=\{L\}
 W=\{W\}
@@ -241,6 +240,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
+C {madvlsi/ammeter1.sym} 1180 10 3 0 {name=IOUT}
 C {madvlsi/nmos3.sym} -270 -40 0 0 {name=M2
 L=\{L\}
 W=\{W\}
@@ -668,9 +668,11 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/opin.sym} 1210 10 0 0 {name=p15 lab=I_OUT_DAC}
-C {devices/opin.sym} 1210 30 0 0 {name=p16 lab=I_DUMP}
+C {madvlsi/ammeter1.sym} 1180 30 3 1 {name=IDUMP}
+C {devices/opin.sym} 1220 10 0 0 {name=p15 lab=I_OUT_DAC}
+C {devices/opin.sym} 1220 30 0 0 {name=p16 lab=I_DUMP}
 C {devices/ipin.sym} -350 -190 0 0 {name=p17 lab=I_IN}
+C {madvlsi/ammeter1.sym} -350 -190 3 0 {name=I_IN}
 C {/home/mstopyra/Documents/MADVLSI-MP4-DAC/schemas/inv.sym} -170 50 0 0 {name=x1}
 C {/home/mstopyra/Documents/MADVLSI-MP4-DAC/schemas/inv.sym} 30 50 0 0 {name=x2}
 C {/home/mstopyra/Documents/MADVLSI-MP4-DAC/schemas/inv.sym} 230 50 0 0 {name=x3}
