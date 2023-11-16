@@ -1,0 +1,66 @@
+param W=32 .param L=4
+.control
+    set wr_singlescale
+    let runs = 1
+    let run = 1
+    while run <= runs
+        set appendwrite = FALSE
+        set wr_vecnames
+        let code = 0
+        while code < 128
+            if code eq 0
+                let D0 = 0
+            else
+                let D0 = code % 2
+            end
+            if floor(code / 2 ) eq 0
+                let D1 = 0
+            else
+                let D1 = floor(code / 2 ) % 2
+            end    
+            if floor(code / 4 ) eq 0
+                let D2 = 0
+            else
+                let D2 = floor(code / 4 ) % 2
+            end
+            if floor(code / 8 ) eq 0
+                let D3 = 0
+            else
+                let D3 = floor(code / 8 ) % 2
+            end
+            if floor(code / 16 ) eq 0
+                let D4 = 0
+            else
+                let D4 = floor(code / 16 ) % 2
+            end
+            if floor(code / 32 ) eq 0
+                let D5 = 0
+            else
+                let D5 = floor(code / 32 ) % 2
+            end
+            if floor(code / 64 ) eq 0
+                let D6 = 0
+            else
+                let D6 = floor(code / 64) % 2
+            end
+            alter VD0 $&D0
+            alter VD1 $&D1
+            alter VD2 $&D2
+            alter VD3 $&D3
+            alter VD4 $&D4
+            alter VD5 $&D5
+            alter VD6 $&D6
+            save all
+            op
+            wrdata ~/Documents/MADVLSI-DAC-MP4/simulations/MCDACDATA{$&run}.txt v(D0) v(D1) v(D2) v(D3) v(D4) v(D5) v(D6) v(IOUT) v(V_out_final)
+            if code eq 0
+                set appendwrite
+                set wr_vecnames = FALSE
+            end
+            let code = code + 1
+        end
+        reset
+        let run = run + 1
+    end
+    quit
+.endc"
