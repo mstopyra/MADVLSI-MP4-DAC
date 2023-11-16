@@ -8,9 +8,9 @@ E {}
 N 1120 -40 1210 -40 {
 lab=#net1}
 N 1120 -20 1240 -20 {
-lab=g_v}
+lab=#net2}
 N 1240 -20 1240 -10 {
-lab=g_v}
+lab=#net2}
 N 1120 0 1350 0 {
 lab=i_out_ld}
 N 1120 20 1340 20 {
@@ -18,53 +18,53 @@ lab=i_dump}
 N 1270 -40 1270 20 {
 lab=i_dump}
 N 960 20 980 20 {
-lab=i_dump}
+lab=#net3}
 N 960 0 980 0 {
-lab=i_out_ld}
+lab=#net4}
 N 960 -20 980 -20 {
-lab=g_v}
+lab=#net5}
 N 960 -40 980 -40 {
-lab=#net1}
+lab=#net6}
 N 800 20 820 20 {
-lab=i_dump}
+lab=#net7}
 N 800 0 820 0 {
-lab=i_out_ld}
+lab=#net8}
 N 800 -20 820 -20 {
-lab=g_v}
+lab=#net9}
 N 800 -40 820 -40 {
-lab=#net1}
+lab=#net10}
 N 640 20 660 20 {
-lab=i_dump}
+lab=#net11}
 N 640 0 660 0 {
-lab=i_out_ld}
+lab=#net12}
 N 640 -20 660 -20 {
-lab=g_v}
+lab=#net13}
 N 640 -40 660 -40 {
-lab=#net1}
+lab=#net14}
 N 480 20 500 20 {
-lab=i_dump}
+lab=#net15}
 N 480 0 500 0 {
-lab=i_out_ld}
+lab=#net16}
 N 480 -20 500 -20 {
-lab=g_v}
+lab=#net17}
 N 480 -40 500 -40 {
-lab=#net1}
+lab=#net18}
 N 320 20 340 20 {
-lab=i_dump}
+lab=#net19}
 N 320 0 340 0 {
-lab=i_out_ld}
+lab=#net20}
 N 320 -20 340 -20 {
-lab=g_v}
+lab=#net21}
 N 320 -40 340 -40 {
-lab=#net1}
+lab=#net22}
 N 160 20 180 20 {
-lab=i_dump}
+lab=#net23}
 N 160 0 180 0 {
-lab=i_out_ld}
+lab=#net24}
 N 160 -20 180 -20 {
-lab=g_v}
+lab=#net25}
 N 160 -40 180 -40 {
-lab=#net1}
+lab=#net26}
 N -10 -20 20 -20 {
 lab=g_v}
 N 60 70 90 70 {
@@ -88,9 +88,9 @@ lab=GND}
 N -50 -90 -40 -90 {
 lab=GND}
 N 20 -90 20 -40 {
-lab=#net1}
+lab=#net27}
 N -80 -0 20 0 {
-lab=i_out_ld}
+lab=#net28}
 N -140 -30 -110 -30 {
 lab=GND}
 N -140 -30 -140 0 {
@@ -103,22 +103,25 @@ N 1350 -180 1350 -150 {
 lab=GND}
 N 1350 -150 1360 -150 {
 lab=GND}
-N 1270 -150 1270 -40 {}
-N 1270 -150 1290 -150 {}
+N 1270 -150 1270 -40 {
+lab=i_dump}
+N 1270 -150 1290 -150 {
+lab=i_dump}
 N 1330 30 1360 30 {
 lab=GND}
 N 1360 30 1360 60 {
 lab=GND}
 N 1360 60 1370 60 {
 lab=GND}
-N 1300 -0 1300 60 {}
-C {/home/lxbtlr/MADVLSI-MP4-DAC/LDS_DAC_block.sym} 170 0 0 0 {name=x1}
-C {/home/lxbtlr/MADVLSI-MP4-DAC/LDS_DAC_block.sym} 330 0 0 0 {name=x2}
-C {/home/lxbtlr/MADVLSI-MP4-DAC/LDS_DAC_block.sym} 490 0 0 0 {name=x3}
-C {/home/lxbtlr/MADVLSI-MP4-DAC/LDS_DAC_block.sym} 650 0 0 0 {name=x4}
-C {/home/lxbtlr/MADVLSI-MP4-DAC/LDS_DAC_block.sym} 810 0 0 0 {name=x5}
-C {/home/lxbtlr/MADVLSI-MP4-DAC/LDS_DAC_block.sym} 970 0 0 0 {name=x6}
-C {/home/lxbtlr/MADVLSI-MP4-DAC/LDS_DAC_block.sym} 1130 0 0 0 {name=x7}
+N 1300 -0 1300 60 {
+lab=i_out_ld}
+C {/home/lxbtlr/MADVLSI-MP4-DAC/schemas/LDS_DAC_block.sym} 170 0 0 0 {name=x1}
+C {/home/lxbtlr/MADVLSI-MP4-DAC/schemas/LDS_DAC_block.sym} 330 0 0 0 {name=x2}
+C {/home/lxbtlr/MADVLSI-MP4-DAC/schemas/LDS_DAC_block.sym} 490 0 0 0 {name=x3}
+C {/home/lxbtlr/MADVLSI-MP4-DAC/schemas/LDS_DAC_block.sym} 650 0 0 0 {name=x4}
+C {/home/lxbtlr/MADVLSI-MP4-DAC/schemas/LDS_DAC_block.sym} 810 0 0 0 {name=x5}
+C {/home/lxbtlr/MADVLSI-MP4-DAC/schemas/LDS_DAC_block.sym} 970 0 0 0 {name=x6}
+C {/home/lxbtlr/MADVLSI-MP4-DAC/schemas/LDS_DAC_block.sym} 1130 0 0 0 {name=x7}
 C {madvlsi/nmos3.sym} 1240 -40 3 0 {name=M29
 L=4
 W=32
