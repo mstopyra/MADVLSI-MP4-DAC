@@ -1,0 +1,116 @@
+magic
+tech sky130A
+timestamp 1700938573
+<< nwell >>
+rect -120 150 85 290
+<< nmos >>
+rect 0 -5 15 95
+<< pmos >>
+rect 0 170 15 270
+<< ndiff >>
+rect -50 85 0 95
+rect -50 5 -40 85
+rect -15 5 0 85
+rect -50 -5 0 5
+rect 15 85 65 95
+rect 15 5 30 85
+rect 55 5 65 85
+rect 15 -5 65 5
+<< pdiff >>
+rect -50 260 0 270
+rect -50 180 -40 260
+rect -15 180 0 260
+rect -50 170 0 180
+rect 15 260 65 270
+rect 15 180 30 260
+rect 55 180 65 260
+rect 15 170 65 180
+<< ndiffc >>
+rect -40 5 -15 85
+rect 30 5 55 85
+<< pdiffc >>
+rect -40 180 -15 260
+rect 30 180 55 260
+<< psubdiff >>
+rect -100 85 -50 95
+rect -100 5 -85 85
+rect -60 5 -50 85
+rect -100 -5 -50 5
+<< nsubdiff >>
+rect -100 260 -50 270
+rect -100 180 -85 260
+rect -60 180 -50 260
+rect -100 170 -50 180
+<< psubdiffcont >>
+rect -85 5 -60 85
+<< nsubdiffcont >>
+rect -85 180 -60 260
+<< poly >>
+rect 0 270 15 285
+rect 0 155 15 170
+rect -30 145 15 155
+rect -30 120 -20 145
+rect 5 120 15 145
+rect -30 110 15 120
+rect 0 95 15 110
+rect 0 -20 15 -5
+<< polycont >>
+rect -20 120 5 145
+<< locali >>
+rect -95 265 -50 270
+rect -95 260 -5 265
+rect -95 180 -85 260
+rect -60 180 -40 260
+rect -15 180 -5 260
+rect -95 175 -5 180
+rect 20 260 65 265
+rect 20 180 30 260
+rect 55 180 65 260
+rect 20 175 65 180
+rect -95 170 -50 175
+rect -30 145 15 155
+rect -120 120 -20 145
+rect 5 120 15 145
+rect -30 110 15 120
+rect 40 145 60 175
+rect 40 120 85 145
+rect 40 90 60 120
+rect -95 85 -5 90
+rect -95 5 -85 85
+rect -60 5 -40 85
+rect -15 5 -5 85
+rect -95 0 -5 5
+rect 20 85 65 90
+rect 20 5 30 85
+rect 55 5 65 85
+rect 20 0 65 5
+<< viali >>
+rect -85 180 -60 260
+rect -40 180 -15 260
+rect -85 5 -60 85
+rect -40 5 -15 85
+<< metal1 >>
+rect -100 265 65 270
+rect -120 260 85 265
+rect -120 180 -85 260
+rect -60 180 -40 260
+rect -15 180 85 260
+rect -120 175 85 180
+rect -100 170 65 175
+rect -100 90 65 95
+rect -120 85 85 90
+rect -120 5 -85 85
+rect -60 5 -40 85
+rect -15 5 85 85
+rect -120 0 85 5
+rect -100 -5 65 0
+<< labels >>
+rlabel locali -120 130 -120 130 7 A
+port 1 w
+rlabel locali 85 130 85 130 3 Q
+port 2 e
+rlabel metal1 -120 215 -120 215 7 VP
+port 3 w
+rlabel metal1 -120 35 -120 35 7 VN
+port 4 w
+<< end >>
