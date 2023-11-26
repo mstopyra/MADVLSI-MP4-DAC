@@ -568,7 +568,6 @@ N -1320 -210 -1320 -120 {}
 N -520 -210 -520 -120 {}
 N 1090 -440 1090 -290 {}
 N 1080 -440 1090 -440 {}
-C {madvlsi/gnd.sym} 440 -140 0 1 {name=l12 lab=GND}
 C {madvlsi/tt_models.sym} 1410 -700 0 0 {
 >>>>>>> 59dbd70c5f3958197d51c92ff70d025ee8bcbdbd:top_dac7.sch
 name=TT_MODELS
