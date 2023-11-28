@@ -1,0 +1,71 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+Flattening unmatched subcell inv in circuit M2M_ladder.spice (0)(7 instances)
+
+Class M2M_ladder.spice (0):  Merged 1 parallel devices.
+Class 7BIT_DAC_block.spice (1):  Merged 1 parallel devices.
+Subcircuit summary:
+Circuit 1: M2M_ladder.spice                |Circuit 2: 7BIT_DAC_block.spice            
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (47->39)           |sky130_fd_pr__nfet_01v8 (40->39)           
+sky130_fd_pr__pfet_01v8 (7)                |sky130_fd_pr__pfet_01v8 (7)                
+Number of devices: 46                      |Number of devices: 46                      
+Number of nets: 34                         |Number of nets: 34                         
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: M2M_ladder.spice                |Circuit 2: 7BIT_DAC_block.spice            
+
+---------------------------------------------------------------------------------------
+Net: net1                                  |Net: DAC_block_20/H_V                      
+  sky130_fd_pr__nfet_01v8/(1|3) = 3        |  sky130_fd_pr__nfet_01v8/(1|3) = 4        
+                                           |                                           
+Net: net2                                  |Net: DAC_block_15/H_V                      
+  sky130_fd_pr__nfet_01v8/(1|3) = 3        |  sky130_fd_pr__nfet_01v8/(1|3) = 4        
+                                           |                                           
+Net: net5                                  |Net: DAC_block_16/H_V                      
+  sky130_fd_pr__nfet_01v8/(1|3) = 3        |  sky130_fd_pr__nfet_01v8/(1|3) = 4        
+                                           |                                           
+Net: net8                                  |Net: DAC_block_17/H_V                      
+  sky130_fd_pr__nfet_01v8/(1|3) = 3        |  sky130_fd_pr__nfet_01v8/(1|3) = 4        
+                                           |                                           
+Net: net11                                 |Net: DAC_block_18/H_V                      
+  sky130_fd_pr__nfet_01v8/(1|3) = 3        |  sky130_fd_pr__nfet_01v8/(1|3) = 4        
+                                           |                                           
+Net: net14                                 |Net: DAC_block_19/H_V                      
+  sky130_fd_pr__nfet_01v8/(1|3) = 3        |  sky130_fd_pr__nfet_01v8/(1|3) = 4        
+                                           |                                           
+Net: net17                                 |Net: DAC_block_14/H_V                      
+  sky130_fd_pr__nfet_01v8/(1|3) = 3        |  sky130_fd_pr__nfet_01v8/(1|3) = 4        
+                                           |                                           
+Net: net20                                 |Net: DAC_block_20/a_5400_7600#             
+  sky130_fd_pr__nfet_01v8/(1|3) = 3        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: net4                                  |Net: DAC_block_14/a_5400_7600#             
+  sky130_fd_pr__nfet_01v8/(1|3) = 3        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: net7                                  |Net: DAC_block_16/a_5400_7600#             
+  sky130_fd_pr__nfet_01v8/(1|3) = 3        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: net10                                 |Net: DAC_block_17/a_5400_7600#             
+  sky130_fd_pr__nfet_01v8/(1|3) = 3        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: net13                                 |Net: DAC_block_18/a_5400_7600#             
+  sky130_fd_pr__nfet_01v8/(1|3) = 3        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: net16                                 |Net: DAC_block_19/a_5400_7600#             
+  sky130_fd_pr__nfet_01v8/(1|3) = 3        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: net19                                 |Net: DAC_block_15/a_5400_7600#             
+  sky130_fd_pr__nfet_01v8/(1|3) = 3        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Cells have no pins;  pin matching not needed.
+Device classes M2M_ladder.spice and 7BIT_DAC_block.spice are equivalent.
+
+Final result: Netlists do not match.
