@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.3 file_version=1.2
 }
 G {}
 K {}
@@ -37,8 +37,6 @@ N -230 20 -200 20 {
 lab=#net6}
 N -140 20 -110 20 {
 lab=#net6}
-N -50 20 -20 20 {
-lab=#net5}
 N -440 -20 -440 -10 {
 lab=VCN}
 N -350 -20 -350 -10 {
@@ -83,8 +81,6 @@ N 310 20 340 20 {
 lab=#net6}
 N 220 20 250 20 {
 lab=#net6}
-N 130 20 160 20 {
-lab=#net5}
 N 550 -20 550 -10 {
 lab=VCN}
 N 460 -20 460 -10 {
@@ -149,6 +145,18 @@ N 580 20 580 100 {
 lab=VCN}
 N 10 -170 100 -170 {
 lab=VBP}
+N -30 20 -20 20 {
+lab=#net5}
+N -50 20 -40 20 {
+lab=#net5}
+N -40 20 -40 60 {
+lab=#net5}
+N 130 20 140 20 {
+lab=#net5}
+N 150 20 160 20 {
+lab=#net5}
+N 150 20 150 60 {
+lab=#net5}
 C {madvlsi/pmos3.sym} -440 -130 1 0 {name=M14
 L=4
 W=32
@@ -511,6 +519,6 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/opin.sym} -470 -170 2 0 {name=p2 lab=VBP}
+C {devices/ipin.sym} -470 -170 0 0 {name=p2 lab=VBP}
 C {devices/opin.sym} -470 20 2 0 {name=p6 lab=VCN}
 C {madvlsi/gnd.sym} 50 20 0 0 {name=l6 lab=GND}
