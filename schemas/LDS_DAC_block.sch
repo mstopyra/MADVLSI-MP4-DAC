@@ -163,12 +163,12 @@ spiceprefix=X
 }
 C {madvlsi/vdd.sym} -1100 200 0 0 {name=l1 lab=VDD}
 C {madvlsi/gnd.sym} -1140 310 2 0 {name=l2 lab=GND}
-C {devices/opin.sym} -850 90 0 0 {name=p33 lab=i_dump}
-C {devices/opin.sym} -850 20 0 0 {name=p34 lab=i_out}
-C {devices/opin.sym} -980 -80 0 0 {name=p35 lab=g_v}
-C {devices/opin.sym} -980 -110 0 0 {name=p36 lab=h_v}
-C {devices/ipin.sym} -1220 -80 0 0 {name=p1 lab=g_v}
-C {devices/ipin.sym} -1230 20 0 0 {name=p3 lab=i_out}
-C {devices/ipin.sym} -1230 90 0 0 {name=p5 lab=i_dump}
-C {devices/ipin.sym} -1220 -110 0 0 {name=p13 lab=h_v}
+C {devices/iopin.sym} -980 -80 0 0 {name=p35 lab=g_v}
+C {devices/iopin.sym} -980 -110 0 0 {name=p36 lab=h_v}
+C {devices/iopin.sym} -1220 -80 0 1 {name=p1 lab=g_v}
+C {devices/iopin.sym} -1230 20 2 0 {name=p3 lab=i_out}
+C {devices/iopin.sym} -1230 90 2 0 {name=p5 lab=i_dump}
+C {devices/iopin.sym} -1220 -110 0 1 {name=p13 lab=h_v}
 C {devices/ipin.sym} -1070 430 0 0 {name=p2 lab=D_in}
+C {devices/iopin.sym} -850 20 2 1 {name=p4 lab=i_out}
+C {devices/iopin.sym} -850 90 2 1 {name=p6 lab=i_dump}

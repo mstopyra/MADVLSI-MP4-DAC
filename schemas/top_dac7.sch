@@ -564,10 +564,14 @@ N 1250 -460 1590 -460 {
 lab=#net41}
 N 1590 -460 1590 -280 {
 lab=#net41}
-N -1320 -210 -1320 -120 {}
-N -520 -210 -520 -120 {}
-N 1090 -440 1090 -290 {}
-N 1080 -440 1090 -440 {}
+N -1320 -210 -1320 -120 {
+lab=#net3}
+N -520 -210 -520 -120 {
+lab=#net15}
+N 1090 -440 1090 -290 {
+lab=#net53}
+N 1080 -440 1090 -440 {
+lab=#net53}
 C {madvlsi/tt_models.sym} 1410 -700 0 0 {
 >>>>>>> 59dbd70c5f3958197d51c92ff70d025ee8bcbdbd:top_dac7.sch
 name=TT_MODELS
@@ -1168,7 +1172,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {madvlsi/nmos3.sym} -2410 -200 0 1 {name=M35
+C {madvlsi/nmos3.sym} -2410 -200 2 0 {name=M35
 L=\{L\}
 W=\{W\}
 body=GND
@@ -1840,3 +1844,4 @@ value=1.8}
 C {madvlsi/gnd.sym} 40 80 0 1 {name=l29 lab=GND}
 C {devices/lab_pin.sym} 40 20 0 1 {name=p27 sig_type=std_logic lab=V_out_final}
 C {devices/lab_pin.sym} 840 -560 0 0 {name=p5 sig_type=std_logic lab=VBP}
+C {devices/lab_pin.sym} -1020 -120 0 0 {name=p16 sig_type=std_logic lab=D4}

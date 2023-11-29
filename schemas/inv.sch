@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.3 file_version=1.2
 }
 G {}
 K {}
@@ -12,7 +12,7 @@ lab=Q}
 N -0 -90 0 -30 {
 lab=A}
 N -30 -0 -30 30 {
-lab=#net1}
+lab=GND}
 N -30 -130 -30 -120 {
 lab=VDD}
 N -30 -140 -30 -130 {
@@ -20,11 +20,11 @@ lab=VDD}
 N -50 -60 -0 -60 {
 lab=A}
 C {madvlsi/nmos3.sym} 0 0 1 0 {name=M1
-L=0.15
-W=1
+L=4
+W=32
 body=GND
 nf=1
-mult=1
+mult=2
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -35,8 +35,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 0 -120 3 0 {name=M2
-L=0.15
-W=1
+L=4
+W=32
 body=VDD
 nf=1
 mult=1
