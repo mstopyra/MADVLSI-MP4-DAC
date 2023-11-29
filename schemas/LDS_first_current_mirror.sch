@@ -418,7 +418,7 @@ lab=#net1}
 N -60 -780 70 -780 {
 lab=#net1}
 C {devices/opin.sym} -330 -340 0 0 {name=p1 lab=I_out}
-C {devices/ipin.sym} -210 -330 0 1 {name=p2 lab=VBP
+C {devices/ipin.sym} -210 -330 0 1 {name=p2 lab=VBN
 }
 C {madvlsi/vdd.sym} -350 -720 0 0 {name=l6 lab=vdd}
 C {devices/ipin.sym} -380 -380 2 0 {name=p6 lab=I_in}
