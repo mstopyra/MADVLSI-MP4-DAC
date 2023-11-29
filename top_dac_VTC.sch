@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.3 file_version=1.2
 }
 G {}
 K {}
@@ -1014,13 +1014,13 @@ spiceprefix=X
 }
 C {madvlsi/ammeter1.sym} 40 -100 3 1 {name=VIDUMP}
 C {madvlsi/ammeter1.sym} -1490 -320 3 0 {name=VI_IN}
-C {/home/mstopyra/Documents/MADVLSI-MP4-DAC/schemas/inv.sym} -1310 -80 0 0 {name=x1}
-C {/home/mstopyra/Documents/MADVLSI-MP4-DAC/schemas/inv.sym} -1110 -80 0 0 {name=x2}
-C {/home/mstopyra/Documents/MADVLSI-MP4-DAC/schemas/inv.sym} -910 -80 0 0 {name=x3}
-C {/home/mstopyra/Documents/MADVLSI-MP4-DAC/schemas/inv.sym} -710 -80 0 0 {name=x4}
-C {/home/mstopyra/Documents/MADVLSI-MP4-DAC/schemas/inv.sym} -510 -80 0 0 {name=x5}
-C {/home/mstopyra/Documents/MADVLSI-MP4-DAC/schemas/inv.sym} -310 -80 0 0 {name=x6}
-C {/home/mstopyra/Documents/MADVLSI-MP4-DAC/schemas/inv.sym} -110 -80 0 0 {name=x7}
+C {/home/lxbtlr/MADVLSI-MP4-DAC/schemas/inv.sym} -1310 -80 0 0 {name=x1}
+C {/home/lxbtlr/MADVLSI-MP4-DAC/schemas/inv.sym} -1110 -80 0 0 {name=x2}
+C {/home/lxbtlr/MADVLSI-MP4-DAC/schemas/inv.sym} -910 -80 0 0 {name=x3}
+C {/home/lxbtlr/MADVLSI-MP4-DAC/schemas/inv.sym} -710 -80 0 0 {name=x4}
+C {/home/lxbtlr/MADVLSI-MP4-DAC/schemas/inv.sym} -510 -80 0 0 {name=x5}
+C {/home/lxbtlr/MADVLSI-MP4-DAC/schemas/inv.sym} -310 -80 0 0 {name=x6}
+C {/home/lxbtlr/MADVLSI-MP4-DAC/schemas/inv.sym} -110 -80 0 0 {name=x7}
 C {madvlsi/pmos3.sym} -2670 -310 0 1 {name=M30
 L=\{L\}
 W=\{W\}

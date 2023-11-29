@@ -6,11 +6,11 @@ V {}
 S {}
 E {}
 N 1120 -40 1210 -40 {
-lab=#net1}
+lab=h_v}
 N 1120 -20 1240 -20 {
-lab=#net2}
+lab=g_v}
 N 1240 -20 1240 -10 {
-lab=#net2}
+lab=g_v}
 N 1120 0 1350 0 {
 lab=i_out_ld}
 N 1120 20 1340 20 {
@@ -18,53 +18,53 @@ lab=i_dump}
 N 1270 -40 1270 20 {
 lab=i_dump}
 N 960 20 980 20 {
-lab=#net3}
+lab=i_dump}
 N 960 0 980 0 {
-lab=#net4}
+lab=i_out_ld}
 N 960 -20 980 -20 {
-lab=#net5}
+lab=g_v}
 N 960 -40 980 -40 {
-lab=#net6}
+lab=h_v}
 N 800 20 820 20 {
-lab=#net7}
+lab=i_dump}
 N 800 0 820 0 {
-lab=#net8}
+lab=i_out_ld}
 N 800 -20 820 -20 {
-lab=#net9}
+lab=g_v}
 N 800 -40 820 -40 {
-lab=#net10}
+lab=h_v}
 N 640 20 660 20 {
-lab=#net11}
+lab=i_dump}
 N 640 0 660 0 {
-lab=#net12}
+lab=i_out_ld}
 N 640 -20 660 -20 {
-lab=#net13}
+lab=g_v}
 N 640 -40 660 -40 {
-lab=#net14}
+lab=h_v}
 N 480 20 500 20 {
-lab=#net15}
+lab=i_dump}
 N 480 0 500 0 {
-lab=#net16}
+lab=i_out_ld}
 N 480 -20 500 -20 {
-lab=#net17}
+lab=g_v}
 N 480 -40 500 -40 {
-lab=#net18}
+lab=h_v}
 N 320 20 340 20 {
-lab=#net19}
+lab=i_dump}
 N 320 0 340 0 {
-lab=#net20}
+lab=i_out_ld}
 N 320 -20 340 -20 {
-lab=#net21}
+lab=g_v}
 N 320 -40 340 -40 {
-lab=#net22}
+lab=h_v}
 N 160 20 180 20 {
-lab=#net23}
+lab=i_dump}
 N 160 0 180 0 {
-lab=#net24}
+lab=i_out_ld}
 N 160 -20 180 -20 {
-lab=#net25}
+lab=g_v}
 N 160 -40 180 -40 {
-lab=#net26}
+lab=h_v}
 N -10 -20 20 -20 {
 lab=g_v}
 N 60 70 90 70 {
@@ -88,9 +88,9 @@ lab=GND}
 N -50 -90 -40 -90 {
 lab=GND}
 N 20 -90 20 -40 {
-lab=#net27}
+lab=h_v}
 N -80 -0 20 0 {
-lab=#net28}
+lab=i_out_ld}
 N -140 -30 -110 -30 {
 lab=GND}
 N -140 -30 -140 0 {
@@ -114,6 +114,10 @@ lab=GND}
 N 1360 60 1370 60 {
 lab=GND}
 N 1300 -0 1300 60 {
+lab=i_out_ld}
+N 20 -150 20 -90 {
+lab=h_v}
+N -30 0 -30 20 {
 lab=i_out_ld}
 C {/home/lxbtlr/MADVLSI-MP4-DAC/schemas/LDS_DAC_block.sym} 170 0 0 0 {name=x1}
 C {/home/lxbtlr/MADVLSI-MP4-DAC/schemas/LDS_DAC_block.sym} 330 0 0 0 {name=x2}
@@ -211,3 +215,5 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/gnd.sym} 1370 60 0 1 {name=l4 lab=GND}
+C {devices/ipin.sym} 20 -150 0 0 {name=p11 lab=h_v}
+C {devices/ipin.sym} -30 20 0 0 {name=p12 lab=I_out}

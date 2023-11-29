@@ -1,0 +1,26 @@
+* NGSPICE file created from REAL_VCN_BIAS_GEN.ext - technology: sky130A
+
+X0 a_n1400_6400# a_n800_6360# a_n800_6360# VN sky130_fd_pr__nfet_01v8 ad=30.4 pd=65.9 as=16 ps=33 w=32 l=4
+X1 VN a_n800_6360# a_n1400_6400# VN sky130_fd_pr__nfet_01v8 ad=48 pd=35 as=30.4 ps=65.9 w=32 l=4
+X2 a_9550_14200# VBP a_8550_14200# VP sky130_fd_pr__pfet_01v8 ad=32 pd=66 as=16 ps=33 w=32 l=4
+X3 a_n800_6360# a_n800_6360# a_n800_6360# VN sky130_fd_pr__nfet_01v8 ad=16 pd=33 as=192 ps=396 w=32 l=4
+X4 a_7550_14200# VBP a_6550_14200# VP sky130_fd_pr__pfet_01v8 ad=16 pd=33 as=16 ps=33 w=32 l=4
+X5 a_8550_14200# VBP a_7550_14200# VP sky130_fd_pr__pfet_01v8 ad=16 pd=33 as=16 ps=33 w=32 l=4
+X6 a_n1400_6400# a_n800_6360# a_n800_6360# VN sky130_fd_pr__nfet_01v8 ad=30.4 pd=65.9 as=16 ps=33 w=32 l=4
+X7 a_6550_14200# VBP a_5550_14200# VP sky130_fd_pr__pfet_01v8 ad=16 pd=33 as=16 ps=33 w=32 l=4
+X8 a_5550_14200# VBP a_n800_6360# VP sky130_fd_pr__pfet_01v8 ad=16 pd=33 as=30.4 ps=65.9 w=32 l=4
+X9 a_n800_6360# a_n800_6360# a_n800_6360# VN sky130_fd_pr__nfet_01v8 ad=16 pd=33 as=0 ps=0 w=32 l=4
+X10 a_n800_6360# a_n800_6360# a_n800_6360# VN sky130_fd_pr__nfet_01v8 ad=16 pd=33 as=0 ps=0 w=32 l=4
+X11 a_n1400_14200# VBP VCN VP sky130_fd_pr__pfet_01v8 ad=32 pd=66 as=32 ps=66 w=32 l=4
+X12 a_n800_6360# a_n800_6360# a_n1400_6400# VN sky130_fd_pr__nfet_01v8 ad=16 pd=33 as=30.4 ps=65.9 w=32 l=4
+X13 a_n1400_6400# a_n800_6360# VN VN sky130_fd_pr__nfet_01v8 ad=30.4 pd=65.9 as=48 ps=35 w=32 l=4
+X14 a_n1400_6400# VCN VCN VN sky130_fd_pr__nfet_01v8 ad=30.4 pd=65.9 as=30.4 ps=65.9 w=32 l=4
+X15 a_n800_6360# a_n800_6360# a_n1400_6400# VN sky130_fd_pr__nfet_01v8 ad=16 pd=33 as=30.4 ps=65.9 w=32 l=4
+X16 a_n800_6360# VBP a_3050_14200# VP sky130_fd_pr__pfet_01v8 ad=32 pd=66 as=16 ps=33 w=32 l=4
+X17 a_n800_6360# a_n800_6360# a_n800_6360# VN sky130_fd_pr__nfet_01v8 ad=16 pd=33 as=0 ps=0 w=32 l=4
+X18 a_2050_14200# VBP a_1050_14200# VP sky130_fd_pr__pfet_01v8 ad=16 pd=33 as=16 ps=33 w=32 l=4
+X19 a_3050_14200# VBP a_2050_14200# VP sky130_fd_pr__pfet_01v8 ad=16 pd=33 as=16 ps=33 w=32 l=4
+X20 VCN VBP a_10060_14200# VP sky130_fd_pr__pfet_01v8 ad=32 pd=66 as=30.4 ps=65.9 w=32 l=4
+X21 VCN VCN a_n1400_6400# VN sky130_fd_pr__nfet_01v8 ad=30.4 pd=65.9 as=30.4 ps=65.9 w=32 l=4
+X22 a_1050_14200# VBP a_50_14200# VP sky130_fd_pr__pfet_01v8 ad=16 pd=33 as=16 ps=33 w=32 l=4
+X23 a_50_14200# VBP a_n950_14200# VP sky130_fd_pr__pfet_01v8 ad=16 pd=33 as=32 ps=66 w=32 l=4
